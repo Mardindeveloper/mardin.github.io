@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "iranian-sans";
+    src: url("../font/iranian-sans.ttf") format('truetype');
+}
+
+body {
+    font-family: "iranian-sans", sans-serif !important;
+    background-color: #16122A !important;
+}
+
+html,
+body {
+    position: relative !important;
+    height: 100% !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+@media screen and (min-width:1550px) {
+    .container {
+        max-width: 1500px !important;
+    }
+}
+
+.text-gray {
+    color: #888888 !important;
+}
+
+.gray-hover:hover {
+    transition: 0.5s all ease;
+    color: #ffffff !important;
+}
+
+/* swiper */
+.swiper {
+    max-width: 1500px !important;
+    height: 60vh !important;
+    padding-top: 20px !important;
+    padding-bottom: 50px !important;
+}
+
+#mySwiper {
+    height: auto !important;
+}
+
+@media screen and (max-width:450px) {
+    #slide {
+        width: 92vw !important;
+    }
+}
+
+#slide {
+    width: 400px !important;
+}
+
+.swiper-slide {
+    text-align: center !important;
+    font-size: 18px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.swiper-slide img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-theme-color: #6A67F4 !important;
+}
+
+/* str-icon */
+.avaliacao {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.star-icon {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 24px;
+    /* alterar o tamanho das estrelas */
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo~.star-icon::before {
+    content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover~.star-icon::before {
+    content: "\2606";
+}
+
+/* Header */
+
+header {
+    z-index: 99 !important;
+    position: sticky !important;
+    top: 0 !important;
+}
+
+header nav {
+    background-color: #2C293E;
+    border-radius: 15px;
+}
+
+.header-logo {
+    width: 150px;
+    right: 10px;
+}
+
+.text-pink {
+    color: #A29FAB !important;
+}
+
+.text-pink:hover {
+    color: #E097A5 !important;
+}
+
+.text-cyan {
+    color: #CEFEF8 !important;
+}
+
+.nav-link:hover {
+    color: #6A67F4 !important;
+}
+
+.dropdown-item:hover {
+    background-color: unset !important;
+    color: #6A67F4 !important;
+}
+
+.dropdown-item:active {
+    background-color: unset !important;
+    color: #6A67F4 !important;
+}
+
+.dropdown-item:focus {
+    background-color: unset !important;
+    color: #6A67F4 !important;
+}
+
+.search {
+    background-color: #16122A !important;
+    border: unset !important;
+}
+
+.search:focus {
+    border: unset !important;
+    color: #ffffff !important;
+}
+
+.search::placeholder {
+    color: #ffffff !important;
+}
+
+/* Section Games View */
+.items {
+    border-radius: 20px;
+    background-color: #2C293E;
+    flex: 1 !important;
+}
+
+/*
+    Login Form Page
+ */
+
+.login-form {
+    width: 420px !important;
+    height: auto !important;
+    border-radius: 10px !important;
+    background-color: #222639 !important;
+    top: 250px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    background-color: #323650;
+    border: none;
+    color: #adadad !important;
+    direction: rtl;
+}
+
+.form-control:focus {
+    background-color: #323650;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.login-form button {
+    background-color: #16122A !important;
+    border: none !important;
+}
+
+.login-form button:hover {
+    transition: 0.5s all ease !important;
+    background-color: #6A67F4 !important;
+    color: #ffffff !important;
+}
+
+/* btn-view more */
+.btn-view {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.btn-view .btn-view-more {
+    color: #ffffff;
+    border: 1px solid #efa1ac;
+    border-radius: 7px;
+}
+
+.btn-view .btn-view-more:hover {
+    color: #ffffff;
+    background-color: #efa1ac;
+}
+
+.btn-insta {
+    position: absolute;
+    top: 75%;
+    right: 45%;
+}
+
+.btn-insta .btn-insta-id {
+    color: #ffffff;
+    border: 1px solid #efa1ac;
+    border-radius: 7px;
+    display: flex;
+    align-items: center !important;
+}
+
+.btn-insta .btn-insta-id:hover {
+    color: #ffffff;
+    background-color: #efa1ac;
+}
+
+.btn-insta .btn-insta-id i {
+    font-size: 30px;
+    color: #ffffff;
+}
